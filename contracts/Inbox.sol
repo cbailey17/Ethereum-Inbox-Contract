@@ -1,16 +1,14 @@
-pragma solidity ^0.4.16;
-// linter warnings (red underline) about pragma version can igonored!
+// SPDX-License-Identifier: GPL-3.0
 
-// contract code will go here
+pragma solidity ^0.8.6;
 
 contract Inbox {
     string public message;
-    
-    function Inbox(string initialMessage) public {
+    constructor(string memory initialMessage) {
         message = initialMessage;
     }
 
-    function setMessage(string newMessage) public {
+    function setMessage(string memory newMessage) public {
         message = newMessage;
     }
 }
